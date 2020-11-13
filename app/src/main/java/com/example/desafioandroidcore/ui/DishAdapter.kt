@@ -12,9 +12,9 @@ import com.example.desafioandroidcore.data.Dish
 class DishAdapter(
     private val dishList: List<Dish>,
     private val onClick: (Dish) -> Unit
-) : RecyclerView.Adapter<DishAdapter.RestaurantViewHolder>() {
+) : RecyclerView.Adapter<DishAdapter.DishViewHolder>() {
 
-    class RestaurantViewHolder(itemView: View, val onClick: (Dish) -> Unit) :
+    class DishViewHolder(itemView: View, val onClick: (Dish) -> Unit) :
         RecyclerView.ViewHolder(itemView) {
 
         private val dishName: TextView = this.itemView.findViewById(R.id.dish_name)
@@ -39,14 +39,14 @@ class DishAdapter(
 
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RestaurantViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DishViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.dish_item, parent, false)
 
-        return RestaurantViewHolder(view, onClick)
+        return DishViewHolder(view, onClick)
     }
 
-    override fun onBindViewHolder(holder: RestaurantViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: DishViewHolder, position: Int) {
         val restaurant = dishList[position]
         holder.bind(restaurant)
 

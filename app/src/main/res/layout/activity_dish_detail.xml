@@ -7,4 +7,39 @@
     android:layout_height="match_parent"
     tools:context=".ui.DishDetailActivity">
 
+  <ImageView
+      android:id="@+id/dish_image_detail"
+      android:layout_width="match_parent"
+      android:layout_height="250dp"
+      android:scaleType="centerCrop"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:srcCompat="@drawable/restaurant1_image"
+      tools:layout_editor_absoluteX="0dp" />
+
+  <TextView
+      android:id="@+id/dish_name_detail"
+      style="@style/header_text"
+      android:layout_marginStart="@dimen/margin_regular"
+      android:layout_marginBottom="@dimen/margin_small"
+      android:textColor="@android:color/white"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="@+id/dish_image_detail"
+      app:layout_constraintStart_toStartOf="parent"
+      tools:text="Dish name" />
+
+  <TextView
+      android:id="@+id/dish_description_detail"
+      style="@style/description_text"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/margin_regular"
+      android:layout_marginTop="@dimen/margin_regular"
+      android:layout_marginEnd="@dimen/margin_regular"
+      android:text=""
+      android:textColor="@color/colorPrimary"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/dish_image_detail"
+      tools:text="Placeholder" />
+
   </androidx.constraintlayout.widget.ConstraintLayout>
