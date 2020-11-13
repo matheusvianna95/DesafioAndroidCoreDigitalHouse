@@ -5,10 +5,18 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/grayBackground</item>
     </style>
 
-    <style name="AppTheme.Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="android:windowBackground">@android:color/background_light</item>
+    <style name="AppTheme.NoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar" />
+
+    <style name="AppTheme.Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar" />
+
+    <style name="header_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Display1</item>
     </style>
 
 </resources>

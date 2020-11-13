@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.desafioandroidcore">
+    package="com.example.desafioandroidcore" >
 
     <application
         android:allowBackup="true"
@@ -8,13 +8,16 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".ui.RestaurantMenuActivity"></activity>
-        <activity android:name=".ui.MenuActicity" />
+        android:theme="@style/AppTheme" >
+        <activity android:name=".ui.DishDetailActivity" >
+        </activity>
+        <activity
+            android:name=".ui.RestaurantMenuActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ui.MainActivity" />
         <activity
             android:name=".ui.SplashActivity"
-            android:theme="@style/AppTheme.Splash">
+            android:theme="@style/AppTheme.Splash" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,6 +26,10 @@
         </activity>
         <activity android:name=".ui.LoginActivity" />
         <activity android:name=".ui.RegisterActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

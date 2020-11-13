@@ -4,6 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.RestaurantMenuActivity">
+    android:background="@color/grayBackground">
+
+    <ImageView
+        android:id="@+id/restaurant_image_menu"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/restaurant1_image"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/restaurant_name_menu"
+        style="@style/header_text"
+        android:layout_marginStart="@dimen/margin_regular"
+        android:layout_marginBottom="@dimen/margin_narrow"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/restaurant_image_menu"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Restaurant name" />
+
+    <TextView
+        android:id="@+id/main_dishes_text"
+        style="@style/header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_narrow"
+        android:text="@string/main_dishes"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/restaurant_name_menu"
+        app:layout_constraintTop_toBottomOf="@+id/restaurant_image_menu" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dish_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_narrow"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_dishes_text" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,6 +9,8 @@ import com.example.desafioandroidcore.data.Restaurant
 import com.example.desafioandroidcore.data.restaurantList
 
 const val RESTAURANT_ID = "restaurant_id"
+const val RESTAURANT_NAME = "restaurant_name"
+const val RESTAURANT_IMAGE = "restaurant_image"
 
 class MainActivity : AppCompatActivity() {
     private lateinit var restaurantList: List<Restaurant>
@@ -19,13 +21,15 @@ class MainActivity : AppCompatActivity() {
         restaurantList = restaurantList(resources)
 
         val restaurantAdapter = RestaurantAdapter(restaurantList, { restaurant -> adapterOnClick(restaurant) })
-        val recyclerView: RecyclerView = findViewById(R.id.recycler_view)
+        val recyclerView: RecyclerView = findViewById(R.id.restaurant_recycler_view)
         recyclerView.adapter = restaurantAdapter
     }
 
     private fun adapterOnClick(restaurant: Restaurant) {
         val intent = Intent(this, RestaurantMenuActivity()::class.java)
         intent.putExtra(RESTAURANT_ID, restaurant.id)
+        intent.putExtra(RESTAURANT_NAME, restaurant.name)
+        intent.putExtra(RESTAURANT_IMAGE, restaurant.image)
         startActivity(intent)
 
     }
