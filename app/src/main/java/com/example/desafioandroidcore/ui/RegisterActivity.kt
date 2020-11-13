@@ -1,4 +1,4 @@
-package com.example.desafioandroidcore
+package com.example.desafioandroidcore.ui
 
 import android.content.Intent
 import android.os.Bundle

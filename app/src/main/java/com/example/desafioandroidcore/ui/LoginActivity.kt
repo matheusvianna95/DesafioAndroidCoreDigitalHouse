@@ -1,4 +1,4 @@
-package com.example.desafioandroidcore
+package com.example.desafioandroidcore.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -21,7 +21,6 @@ class LoginActivity : AppCompatActivity() {
 
         binding.signInButton.setOnClickListener {
             startActivity(Intent(this@LoginActivity, MainActivity::class.java))
-            this@LoginActivity.finish()
         }
     }
 }

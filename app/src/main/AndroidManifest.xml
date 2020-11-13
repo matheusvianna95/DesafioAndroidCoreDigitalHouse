@@ -9,12 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ui.RestaurantMenuActivity"></activity>
+        <activity android:name=".ui.MenuActicity" />
+        <activity android:name=".ui.MainActivity" />
         <activity
-            android:name=".ui.login.LoginActivity2"
-            android:label="@string/title_activity_login2"></activity>
-        <activity android:name=".MainActivity" />
-        <activity
-            android:name=".SplashActivity"
+            android:name=".ui.SplashActivity"
             android:theme="@style/AppTheme.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,8 +21,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".RegisterActivity" />
+        <activity android:name=".ui.LoginActivity" />
+        <activity android:name=".ui.RegisterActivity" />
     </application>
 
 </manifest>

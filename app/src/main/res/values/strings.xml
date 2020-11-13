@@ -18,4 +18,18 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="dish_name_placeholder">"Salada com molho de gengibre"</string>
+    <string name="dish_description_placeholder">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et nulla elementum, posuere elit sit amet, gravida odio. Suspendisse ac tortor lorem. Nunc eu nisi efficitur, posuere massa non, sodales."</string>
+    <string name="restaurant1_name">"Tony Roma's"</string>
+    <string name="restaurant2_name">"Aoyama - Moema"</string>
+    <string name="restaurant3_name">"Outback - Moema"</string>
+    <string name="restaurant4_name">"Si Señor!"</string>
+    <string name="restaurant1_address">"Av. Lavandisca, 717 - Indianópolis, São Paulo"</string>
+    <string name="restaurant2_address">"Alameda dos Arapanés, 532 - Moema, São Paulo"</string>
+    <string name="restaurant3_address">"Av. Moaci, 187 - Moema, São Paulo"</string>
+    <string name="restaurant4_address">"Alameda Jauaperi, 626 - Moema, São Paulo"</string>
+    <string name="restaurant1_closing">"Fecha às 22:00"</string>
+    <string name="restaurant2_closing">"Fecha às 00:00"</string>
+    <string name="restaurant3_closing">"Fecha às 00:00"</string>
+    <string name="restaurant4_closing">"Fecha às 01:00"</string>
 </resources>
