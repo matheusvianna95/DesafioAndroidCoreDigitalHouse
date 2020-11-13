@@ -6,4 +6,4 @@ O desafio consiste em desenvolver um aplicativo seguindo os padrões do Material
 
 ## Preview
 
-![UML](media/app-preview.gif)
+<img src="media/app-preview.gif" alt="App preview" width="200"/>
