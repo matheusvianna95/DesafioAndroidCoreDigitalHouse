@@ -46,7 +46,7 @@
         android:layout_marginTop="@dimen/margin_regular"
         android:layout_marginEnd="@dimen/margin_regular"
         android:text=""
-        android:textColor="@color/colorPrimary"
+        android:textColor="?android:attr/textColorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dish_image_detail"
