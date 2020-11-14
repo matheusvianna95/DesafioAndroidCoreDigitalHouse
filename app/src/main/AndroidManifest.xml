@@ -10,11 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity android:name=".ui.DishDetailActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="" />
         <activity
             android:name=".ui.RestaurantMenuActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="" />
         <activity android:name=".ui.MainActivity" />
         <activity
             android:name=".ui.SplashActivity"

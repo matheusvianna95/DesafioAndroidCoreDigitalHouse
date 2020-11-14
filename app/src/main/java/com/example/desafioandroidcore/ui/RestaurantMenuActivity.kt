@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.desafioandroidcore.data.Dish
 import com.example.desafioandroidcore.data.dishList
 import com.example.desafioandroidcore.databinding.ActivityRestaurantMenuBinding
+import kotlinx.android.synthetic.main.activity_dish_detail.*
 
 const val DISH_ID = "dish_id"
 const val DISH_NAME = "dish_name"
@@ -36,6 +37,13 @@ class RestaurantMenuActivity : AppCompatActivity() {
 
         binding.restaurantNameMenu.text = restaurantName
         binding.restaurantImageMenu.setImageResource(restaurantImage!!)
+
+        val navBar = setSupportActionBar(binding.navBar)
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 
     private fun adapterOnClick(dish: Dish) {

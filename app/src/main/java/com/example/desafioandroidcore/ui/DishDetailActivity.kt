@@ -23,5 +23,13 @@ class DishDetailActivity : AppCompatActivity() {
         binding.dishNameDetail.text = dishName
         binding.dishDescriptionDetail.text = dishDescription
         binding.dishImageDetail.setImageResource(dishImage!!)
+
+        val navBar = setSupportActionBar(binding.navBar)
     }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
+    }
+
 }
